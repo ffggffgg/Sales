@@ -5,20 +5,20 @@ This project processes e-commerce sales data and visualizes key insights using P
 ---
 
 ## 📁 Project Structure
-
+'''
 Sales/
-├── .git
-├── .idea
-├── .venv
-├── data/
-│ └── train.csv # Raw Kaggle dataset
-├── src/
-│ ├── extract.py # Downloads CSV, enriches with postal codes
-│ ├── transform.py # Cleans & preprocesses data
-│ ├── load_and_visual.py # Creates tables and loads data into PostgreSQL
-│ └── main.py # Pipeline entry point
-├── sales.pbix # Power BI Dashboard
-└── README.md
+- ├── .git
+- ├── .idea
+- ├── .venv
+- ├── data/
+- │ └── train.csv # Raw Kaggle dataset
+- ├── src/
+- │ ├── extract.py # Downloads CSV, enriches with postal codes
+- │ ├── transform.py # Cleans & preprocesses data
+- │ ├── load_and_visual.py # Creates tables and loads data into PostgreSQL
+- │ └── main.py # Pipeline entry point
+- ├── sales.pbix # Power BI Dashboard
+- └── README.md
 
 ---
 
