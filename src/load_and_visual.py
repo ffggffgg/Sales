@@ -1,20 +1,8 @@
-import numpy as np
 import pandas as pd
-import boto3
 import psycopg2
 from extract import load_csv_data
 from transform import transform_data
-data = load_csv_data()
-transformed_data = transform_data(data)
 
-# Параметри підключення
-conn = psycopg2.connect(
-    dbname="your_database",
-    user="your_user",
-    password="your_password",
-    host="your_host",
-    port="5432"
-)
 cursor = conn.cursor()
 
 create_tables = """
@@ -146,5 +134,3 @@ def insert_data(tf_data):
     conn.commit()
     cursor.close()
     conn.close()
-
-insert_data(transformed_data)

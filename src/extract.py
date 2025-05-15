@@ -7,9 +7,7 @@ import pandas as pd
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', 350)
 
-def load_csv_data():
-    # Вкажіть шлях до директорії, куди потрібно зберігати дані
-    custom_path = "C:\\Users\\yaski\\WorkProjects\\Projects\\Sales\\data"  # Замініть на свій шлях
+def load_csv_data(custom_path):
 
     # Завантаження датасету
     path = kagglehub.dataset_download("rohitsahoo/sales-forecasting")
